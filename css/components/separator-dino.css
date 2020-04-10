@@ -1,5 +1,6 @@
 .separator-dino {
   --half-with-egg: 11px;
+  --half-with-eggs: 30px;
   background-image: url(../../img/ovo.png);
   background-size: auto 22px;
   background-repeat: no-repeat;
@@ -13,6 +14,12 @@
   margin-bottom: var(--gap-medium);
 }
 
+.separator-dino.-all{
+  background-image: url(../../img/eggs.png);
+  background-size: 60px auto;
+  height: 58px;
+}
+
 .separator-dino::before,
 .separator-dino::after {
   content: "";
@@ -20,6 +27,11 @@
   width: calc(50% - var(--half-with-egg) - var(--gap-very-small));
   height: 4px;
   background-color: var(--color-first);
+}
+
+.separator-dino.-all::before,
+.separator-dino.-all::after {
+  width: calc(50% - var(--half-with-eggs) - var(--gap-very-small));
 }
 
 .separator-dino::before {
