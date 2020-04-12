@@ -41,3 +41,18 @@
 .separator-dino::after {
     border-radius: 2px 0 0 2px;
 }
+
+@media (min-width:600px) {
+  
+  .separator-dino {
+    --half-with-egg: 22px;
+    --half-with-eggs: 35px;
+    background-size: auto 44px;
+    height: 44px;
+  }
+  .separator-dino.-all{
+    background-image: url(../../img/eggs.png);
+    background-size: 70px auto;
+    height: 70px;
+  }
+}
