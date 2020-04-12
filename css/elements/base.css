@@ -1,7 +1,11 @@
+html, body {
+  height: 100%;
+}
+
 body {
   background-image: linear-gradient(
     180.22deg,
-    #7e5002 20.16%,
+    #7C5407 20.16%,
     #e69405 36.19%,
     #fad121 98.57%
   );
@@ -12,6 +16,13 @@ body {
   line-height: 20px;
   color: #73263d;
   font-weight: bold;
+}
+
+@media (min-width: 600px){
+  body {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 
 
